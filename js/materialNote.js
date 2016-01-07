@@ -2253,8 +2253,8 @@ var dom = (function() {
     */
     options: {
       // >>>>>>> CK extra options
-      defaultTextColor: '#212121',       // default text color (used by color tool)
-      defaultBackColor: '#ddd',          // default text color (used by color tool)
+      defaultTextColor: '#000000',       // default text color (used by color tool)
+      defaultBackColor: '#E94B35',          // default text color (used by color tool)
       followingToolbar: true,            // make the toolbar follow on window scroll
       otherStaticBarClass: "staticTop",  // default class for other static bars eventually used on webapp
 
@@ -6079,7 +6079,7 @@ var dom = (function() {
         style: function(lang, options) {
             var items = options.styleTags.reduce(function(memo, v) {
             var label = lang.style[v === 'p' ? 'normal' : v];
-            
+
             return memo + '<li><div data-event="formatBlock" data-value="' + v + '">' +
                         ((v === 'p' || v === 'pre') ? label : '<' + v + '>' + label + '</' + v + '>') +
                     '</div></li>';
@@ -6903,7 +6903,7 @@ var dom = (function() {
                 otherBarHeight = $("." + options.otherStaticBarClass).outerHeight();
                 if (!otherBarHeight) otherBarHeight = 0;
                 //console.log(otherBarHeight);
-                
+
                 currentOffset = $(document).scrollTop();
                 toolbarOffset = toolbar.offset().top;
                 editorOffsetTop = $editor.offset().top;
@@ -6927,7 +6927,7 @@ var dom = (function() {
                 }
             });
         }
-        if (options.followingToolbar) {            
+        if (options.followingToolbar) {
             followingBar();
         }
 
@@ -7326,7 +7326,7 @@ var dom = (function() {
 
         function handleDropdowns(select, bar) {
           var list = $(select).next('ul.dropdown-menu');
-          var container = $(select).parent('.btn-group');    
+          var container = $(select).parent('.btn-group');
 
           list.slideUp(0);
 
@@ -7361,7 +7361,7 @@ var dom = (function() {
             if (list.is(':visible')) reopen = false;
 
             bar.find('ul.dropdown-menu').slideUp(200);
-            
+
             if (reopen) {
               list.slideToggle(200);
             }
@@ -7386,7 +7386,7 @@ var dom = (function() {
 
         // activate tabs
         tabContainer.tabs();
-      }); 
+      });
 
       return this;
     },
