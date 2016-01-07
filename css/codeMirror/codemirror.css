@@ -51,7 +51,7 @@
 .CodeMirror.cm-fat-cursor div.CodeMirror-cursor {
   width: auto;
   border: 0;
-  background: #7e7;
+  background: #E94B35;
 }
 .CodeMirror.cm-fat-cursor div.CodeMirror-cursors {
   z-index: 1;
@@ -65,19 +65,19 @@
   animation: blink 1.06s steps(1) infinite;
 }
 @-moz-keyframes blink {
-  0% { background: #7e7; }
+  0% { background: #E94B35; }
   50% { background: none; }
-  100% { background: #7e7; }
+  100% { background: #E94B35; }
 }
 @-webkit-keyframes blink {
-  0% { background: #7e7; }
+  0% { background: #E94B35; }
   50% { background: none; }
-  100% { background: #7e7; }
+  100% { background: #E94B35; }
 }
 @keyframes blink {
-  0% { background: #7e7; }
+  0% { background: #E94B35; }
   50% { background: none; }
-  100% { background: #7e7; }
+  100% { background: #E94B35; }
 }
 
 /* Can style cursor different in overwrite (non-insert) mode */
@@ -101,7 +101,7 @@ div.CodeMirror-overwrite div.CodeMirror-cursor {}
 .cm-link {text-decoration: underline;}
 .cm-strikethrough {text-decoration: line-through;}
 
-.cm-s-default .cm-keyword {color: #708;}
+.cm-s-default .cm-keyword {color: #E94B35;}
 .cm-s-default .cm-atom {color: #219;}
 .cm-s-default .cm-number {color: #164;}
 .cm-s-default .cm-def {color: #00f;}
